@@ -50,7 +50,7 @@ for i in range(10):
     st.markdown(f'<div class="money" style="left:{i*10}%; animation-duration:{5+i%3}s;">💸</div>', unsafe_allow_html=True)
 
 # ---------------- Load Model ----------------
-@st.cache_resource
+
 def load_model():
     try:
         return joblib.load("linear_pipe.pkl")
